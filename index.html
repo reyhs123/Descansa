@@ -204,23 +204,23 @@
         <!-- Botón música -->
         <div class="music-pill" id="playToggle">
           <span class="music-dot"></span>
-          <span class="music-title" id="playLabel">♫ 1960 – Humbe (playlist)</span>
+          <span class="music-title" id="playLabel">♫ Gustarme Tanto</span>
         </div>
 
-        <h1>Antes de dormir 💫</h1>
+        <h1>linda (mi vida) ❤️‍🩹</h1>
 
         <div class="body-text">
-          <p>Solo quería decirte algo antes de que cierres los ojos: gracias por existir.</p>
-          <p>Sé que tus días no siempre son fáciles, pero aun cansada sigues siendo la persona más increíble que conozco.</p>
-          <p>Ojalá pudiera abrazarte ahora mismo, quitarte un poco del peso que llevas y dejarte solo con calma y música bonita.</p>
-          <p>Si alguna vez dudas de ti, acuérdate de esto: hay alguien aquí pensando en ti, deseando que descanses en paz y que mañana te duela un poquito menos todo.</p>
-          <p>Te quiero más de lo que sé decir con palabras. Descansa, mi princesa, que yo me quedo aquí contigo en esta canción.</p>
+          <p>Hoy solo quiero que te vayas a dormir sabiendo algo: eres mucho más especial de lo que crees.</p>
+          <p>Gracias por aguantar tanto, por seguir aquí aun cuando el día pesa.</p>
+          <p>Ojalá pudiera estar a tu lado ahora mismo, abrazarte fuerte y decirte al oído que todo va a estar bien.</p>
+          <p>Si algún día dudas de ti, acuérdate de mí pensando en ti a esta hora, deseando que descanses en paz y sin tantas vueltas en la cabeza.</p>
+          <p>Te quiero más de lo que mis palabras pueden explicar. Descansa, mi princesa. 💜</p>
         </div>
 
-        <p class="signature">Con mucho cariño, tu peque. 💜</p>
+        <p class="signature">Con mucho cariño, tu peque.</p>
       </div>
 
-      <!-- Player SoundCloud oculto: playlist de Humbe – 1960 -->
+      <!-- Player SoundCloud oculto -->
       <div id="sc-container" style="display:none;">
         <iframe
           id="sc-widget"
@@ -229,7 +229,7 @@
           scrolling="no"
           frameborder="no"
           allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/chargetogame14/sets/humbe-1960-mp3%3Fsi%3D151d86db066f46cfa9950df36ca4bd72&color=%23ff1493&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false">
+          src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/derekkingsleague10/gustarme-tanto%3Fsi%3D58389088ac9349dc83d5b874af2cf209&color=%23ff1493&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false">
         </iframe>
       </div>
     </div>
@@ -247,19 +247,19 @@
       if (!isPlaying) {
         widget.play();
         isPlaying = true;
-        label.textContent = "⏸ Pausar playlist";
+        label.textContent = "⏸ Pausar canción";
         toggle.classList.add("playing");
       } else {
         widget.pause();
         isPlaying = false;
-        label.textContent = "♫ 1960 – Humbe (playlist)";
+        label.textContent = "♫ Gustarme Tanto";
         toggle.classList.remove("playing");
       }
     });
 
     widget.bind(SC.Widget.Events.FINISH, () => {
       isPlaying = false;
-      label.textContent = "♫ 1960 – Humbe (playlist)";
+      label.textContent = "♫ Gustarme Tanto";
       toggle.classList.remove("playing");
     });
   </script>
