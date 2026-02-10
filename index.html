@@ -204,10 +204,10 @@
         <!-- Botón música -->
         <div class="music-pill" id="playToggle">
           <span class="music-dot"></span>
-          <span class="music-title" id="playLabel">♫ Gustarme Tanto</span>
+          <span class="music-title" id="playLabel">♫ 1960 – Humbe (playlist)</span>
         </div>
 
-        <h1>linda(mi vida)❤️‍🩹</h1>
+        <h1>linda(mi vida) 👉👈</h1>
 
         <div class="body-text">
           <p>Hoy solo quiero que te vayas a dormir sabiendo algo: eres mucho más especial de lo que crees.</p>
@@ -220,7 +220,7 @@
         <p class="signature">Con mucho cariño, tu peque.</p>
       </div>
 
-      <!-- Player SoundCloud oculto -->
+      <!-- Player SoundCloud oculto: playlist 1960 – Humbe -->
       <div id="sc-container" style="display:none;">
         <iframe
           id="sc-widget"
@@ -229,7 +229,7 @@
           scrolling="no"
           frameborder="no"
           allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/derekkingsleague10/gustarme-tanto%3Fsi%3D58389088ac9349dc83d5b874af2cf209&color=%23ff1493&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false">
+          src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/chargetogame14/sets/humbe-1960-mp3%3Fsi%3D151d86db066f46cfa9950df36ca4bd72&color=%23ff1493&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false">
         </iframe>
       </div>
     </div>
@@ -247,19 +247,19 @@
       if (!isPlaying) {
         widget.play();
         isPlaying = true;
-        label.textContent = "⏸ Pausar canción";
+        label.textContent = "⏸ Pausar playlist";
         toggle.classList.add("playing");
       } else {
         widget.pause();
         isPlaying = false;
-        label.textContent = "♫ Gustarme Tanto";
+        label.textContent = "♫ 1960 – Humbe (playlist)";
         toggle.classList.remove("playing");
       }
     });
 
     widget.bind(SC.Widget.Events.FINISH, () => {
       isPlaying = false;
-      label.textContent = "♫ Gustarme Tanto";
+      label.textContent = "♫ 1960 – Humbe (playlist)";
       toggle.classList.remove("playing");
     });
   </script>
